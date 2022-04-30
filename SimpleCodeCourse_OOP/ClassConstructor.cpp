@@ -1,5 +1,5 @@
 #include "ClassConstructor.h"
-#include "Default.h"
+#include "stdafx.h"
 
 //# Video: 091. Constructor a class is from constructor parameter default
 

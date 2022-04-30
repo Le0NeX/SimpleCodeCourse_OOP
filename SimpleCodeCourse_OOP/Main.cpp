@@ -10,9 +10,9 @@
 #include "StringClass.h"
 #include "FriendlyClasses.h"
 #include "DefinitionFunction.h"
-
-
-
+#include "StaticField.h"
+#include "StaticMethod.h"
+#include "AgregationAndComposition.h"
 
 int main()
 {
@@ -27,7 +27,11 @@ int main()
 	//LaunchOperatorsOverload();
 	//LaunchStringClass();
 	//LaunchFriendlyClasses();
-	LaunchDefinitionFunction();
+	//LaunchDefinitionFunction();
+	//LaunchStaticField();
+	//LaunchStaticMethod();
+	LaunchAgrigationAndComposition();
+
 
 	return 0;
 }

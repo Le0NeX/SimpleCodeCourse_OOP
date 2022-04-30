@@ -1,5 +1,5 @@
 #include "Destryktor.h"
-#include "Default.h"
+#include "stdafx.h"
 
 //Lesson: Destryctor
 

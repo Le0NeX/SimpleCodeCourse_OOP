@@ -1,6 +1,6 @@
 //Lesson: Access modifier
 #include "AccessModifier.h"
-#include "Default.h"
+#include "stdafx.h"
 
 class Pointer
 {

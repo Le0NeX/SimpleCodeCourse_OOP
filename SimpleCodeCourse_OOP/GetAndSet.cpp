@@ -1,5 +1,6 @@
 #include "GetAndSet.h"
-#include "Default.h"
+#include "stdafx.h"
+
 
 //Getters and setters, incapsulation
 class Point

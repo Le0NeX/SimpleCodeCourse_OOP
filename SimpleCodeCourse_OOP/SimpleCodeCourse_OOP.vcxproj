@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AccessModifier.cpp" />
+    <ClCompile Include="AgregationAndComposition.cpp" />
     <ClCompile Include="ClassAndObject.cpp" />
     <ClCompile Include="ClassConstructor.cpp" />
     <ClCompile Include="ClassFunction.cpp" />
@@ -151,22 +152,26 @@
     <ClCompile Include="KeywordThis.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="OperatorsOverload.cpp" />
+    <ClCompile Include="StaticField.cpp" />
+    <ClCompile Include="StaticMethod.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="StringClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccessModifier.h" />
+    <ClInclude Include="AgregationAndComposition.h" />
     <ClInclude Include="ClassAndObject.h" />
     <ClInclude Include="ClassConstructor.h" />
     <ClInclude Include="ClassFunction.h" />
     <ClInclude Include="CopyConstructor.h" />
-    <ClInclude Include="Default.h" />
     <ClInclude Include="DefinitionFunction.h" />
     <ClInclude Include="Destryktor.h" />
     <ClInclude Include="FriendlyClasses.h" />
     <ClInclude Include="GetAndSet.h" />
     <ClInclude Include="KeywordThis.h" />
     <ClInclude Include="OperatorsOverload.h" />
+    <ClInclude Include="StaticField.h" />
+    <ClInclude Include="StaticMethod.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringClass.h" />
   </ItemGroup>

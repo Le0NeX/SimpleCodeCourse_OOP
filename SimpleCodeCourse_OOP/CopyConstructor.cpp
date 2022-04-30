@@ -1,5 +1,5 @@
 #include "CopyConstructor.h"
-#include "Default.h"
+#include "stdafx.h"
 
 //Lesson: 095. Constructor copy.
 

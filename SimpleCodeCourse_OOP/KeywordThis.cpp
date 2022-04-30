@@ -1,5 +1,6 @@
 #include "KeywordThis.h"
-#include "Default.h"
+#include "stdafx.h"
+
 
 //Lesson: Keyword this.
 

@@ -1,7 +1,7 @@
 //Lesson: Class and object classe
 
 #include "ClassAndObject.h"
-#include "Default.h"
+#include "stdafx.h"
 
 class Human
 {

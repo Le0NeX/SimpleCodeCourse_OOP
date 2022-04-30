@@ -39,6 +39,7 @@ private:
 
 class Apple
 {
+	friend Human;//Create friendly class
 public:
 	Apple(int weight, string color)
 	{
@@ -48,7 +49,7 @@ public:
 private:
 	int weight = 0;
 	string color = "";
-	friend void Human::TakeApple(Apple& apple);
+	//friend void Human::TakeApple(Apple& apple);
 };
 
 void Human::TakeApple(Apple& apple)

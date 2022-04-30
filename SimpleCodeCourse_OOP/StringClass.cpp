@@ -1,4 +1,5 @@
 #include "StringClass.h"
+#include "stdafx.h"
 
 //Lesson: Video #099.
 
@@ -45,13 +46,34 @@ public:
 		myString.str[countLength] = '\0';
 		return myString;
 	}
+	bool operator == (const MyString & other)
+	{
+		if (this->length != other.length)
+		{
+			return false;
+		}
+
+		for (int i = 0; i < this->length; i++)
+		{
+			if (this->str[i] != other.str[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
 	~MyString() 
 	{
 		//delete[] this->str; 
 		//str = nullptr;
 	}
+	int Length()
+	{
+		return length;
+	}
 private:
 	char* str = nullptr;//Pointer initialization with help nullptr
+	int length = 0;
 };
 
 void LaunchStringClass()
@@ -60,5 +82,7 @@ void LaunchStringClass()
 	MyString str2("World!");
 	MyString myString("Test");
 	MyString result = str + str2;
+	bool equal = str == str2;
+	cout << "Result equal: " << equal << endl;
 }
 		

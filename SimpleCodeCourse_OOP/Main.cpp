@@ -1,8 +1,7 @@
 #include "ClassAndObject.h"
-#include "ClassFunction.h"
 #include "AccessModifier.h"
 #include "GetAndSet.h"
-#include "ClassConstructor.h"
+#include "Constructor.h"
 #include "Destryktor.h"
 #include "KeywordThis.h"
 #include "CopyConstructor.h"
@@ -13,14 +12,20 @@
 #include "StaticField.h"
 #include "StaticMethod.h"
 #include "AgregationAndComposition.h"
+#include "Heirs.h"
+#include "ModifiersAccess.h"
+#include "VirtualFunction.h"
+#include "AbstractClass.h"
+#include "Inheritance.h"
+#include "Interface.h"
+
 
 int main()
 {
 	//LaunchClassAndObject();
-	//LaunchClassFunction();
 	//LaunchAccessModifier();
 	//LaunchGetAndSet();
-	//LaunchClassConstructor();
+	//LaunchConstructor();
 	//LaunchDestryktor();
 	//LaunchKeywordThis();
 	//LaunchCopyConstructor();
@@ -30,7 +35,13 @@ int main()
 	//LaunchDefinitionFunction();
 	//LaunchStaticField();
 	//LaunchStaticMethod();
-	LaunchAgrigationAndComposition();
+	//LaunchAgrigationAndComposition();
+	//LaunchHeirs();
+	//LaunchModifierAccess();
+	//LaunchVirtualFunction();
+	//LaunchAbstractClass();
+	//LaunchInheritance();
+	LaunchInterface();
 
 
 	return 0;

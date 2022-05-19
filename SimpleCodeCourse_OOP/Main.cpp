@@ -18,7 +18,7 @@
 #include "AbstractClass.h"
 #include "Inheritance.h"
 #include "Interface.h"
-
+#include "FileWork.h"
 
 int main()
 {
@@ -41,8 +41,8 @@ int main()
 	//LaunchVirtualFunction();
 	//LaunchAbstractClass();
 	//LaunchInheritance();
-	LaunchInterface();
-
+	//LaunchInterface();
+	LaunchFileWork();
 
 	return 0;
 }

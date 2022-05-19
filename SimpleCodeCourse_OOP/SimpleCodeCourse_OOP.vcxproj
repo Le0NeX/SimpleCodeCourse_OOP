@@ -147,6 +147,7 @@
     <ClCompile Include="CopyConstructor.cpp" />
     <ClCompile Include="DefinitionFunction.cpp" />
     <ClCompile Include="Destryktor.cpp" />
+    <ClCompile Include="FileWork.cpp" />
     <ClCompile Include="FriendlyClasses.cpp" />
     <ClCompile Include="GetAndSet.cpp" />
     <ClCompile Include="Heirs.cpp" />
@@ -171,6 +172,7 @@
     <ClInclude Include="CopyConstructor.h" />
     <ClInclude Include="DefinitionFunction.h" />
     <ClInclude Include="Destryktor.h" />
+    <ClInclude Include="FileWork.h" />
     <ClInclude Include="FriendlyClasses.h" />
     <ClInclude Include="GetAndSet.h" />
     <ClInclude Include="Heirs.h" />

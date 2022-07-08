@@ -8,6 +8,7 @@ void LaunchFileWork()
 	//SaveObject();
 	//ReadObject();
 	FstreamReads();
+
 }
 
 //Lesson:133. Write to file.
@@ -89,6 +90,8 @@ private:
 	int x;
 	int y;
 	int z;
+	friend ostream& operator <<(ostream& os, const Pointer& pointer);
+	friend istream& operator >>(istream& is, Pointer& pointer);
 };
 void SaveObject()
 {
@@ -131,9 +134,11 @@ void ReadObject()
 	}
 	fin.close();
 }
+
 //Lesson: 136. fstream: Reads and write a data
 void FstreamReads()
 {
+	Pointer pointer;
 	fstream fs;
 	string FileLocation = "MyFile.txt";
 	fs.open(FileLocation, fstream::in | fstream::out | fstream::app);//Check, is opens a file. Parametr a pointers the on bits read and write. Working with a read, a write.
@@ -146,6 +151,7 @@ void FstreamReads()
 		cout << "Please, the click: #1 for writes a message in a file\n";
 		cout << "Please, the click: #2 for reads alled a message in a file\n";
 		cin >> InputValue;
+		fs << pointer << endl;
 		if (InputValue == 1)
 		{
 			cout << "Введите Ваше соощение:\n";
@@ -157,10 +163,14 @@ void FstreamReads()
 		if (InputValue == 2)
 		{
 			string OutputValue = "";
-			while (!fs.eof())
+			while (true)
 			{
 				fs >> OutputValue;
 				cout << OutputValue << endl;
+				if (fs.eof())
+				{
+					break;
+				}
 			}
 		}
 	}
@@ -169,4 +179,22 @@ void FstreamReads()
 		cout << "A file not opened!\n";
 	}
 	fs.close();
+}
+
+//Lesson 137. Streaming input-output in a file. Overload the operator
+ostream& operator<<(ostream& os, const Pointer& pointer)//Realisation overload the operator input-output.
+{
+	os << pointer.x << " " << pointer.y << " " << pointer.z;
+	return os;
+}
+istream& operator >>(istream& is, Pointer& pointer)
+{
+	is >> pointer.x >> pointer.y >> pointer.z;
+	return is;
+}
+
+void StreamingInputOutput()
+{
+	Pointer pointer(211, 234, 123);
+	cout << pointer << endl;
 }

@@ -19,6 +19,13 @@
 #include "Inheritance.h"
 #include "Interface.h"
 #include "FileWork.h"
+#include "HandlingException.h";
+#include "Enum.h";
+#include "Namespace.h";
+#include "ClassTemplates.h";
+#include "struct.h";
+#include "Pointers.h";
+
 
 int main()
 {
@@ -42,7 +49,13 @@ int main()
 	//LaunchAbstractClass();
 	//LaunchInheritance();
 	//LaunchInterface();
-	LaunchFileWork();
+	//LaunchFileWork();
+	//LaunchException();
+	//LaunchEnum();
+	//LaunchNamespace();
+	//LaunchClassTemplates();
+	//LaunchStruct();
+	LaunchPointers();
 
 	return 0;
 }
